@@ -1,10 +1,12 @@
-name: Playwright PR Review
+name: Automated PR Review
 
 on:
   pull_request:
     types: [opened, synchronize]
     paths:
-      - "playwright/**"
+      - "src/**"
+      - "*.js"
+      - "*.json"
 
 jobs:
   playwright-review:
