@@ -43,6 +43,3 @@ jobs:
             Note: The PR branch is already checked out.
 
             Post detailed findings as PR comments. Include specific code suggestions, potential issues, and improvements.
-
-          claude_args: |
-            --allowedTools "mcp__github_inline_comment__create_inline_comment,Bash(gh pr comment:*)"
