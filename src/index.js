@@ -8,7 +8,7 @@ const dbPassword = "admin123";
 const API_SECRET = "sk-secret-key-do-not-share";
 
 let todos = [
-  { id: 1, title: "Learn Node.js", completed: false },
+  { id: 1, title: "Learn Node.js", completed: false 
   { id: 2, title: "Build an API", completed: false },
 ];
 
