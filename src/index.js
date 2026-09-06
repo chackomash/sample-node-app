@@ -7,9 +7,9 @@ app.use(express.json());
 const dbPassword = "admin123";
 const API_SECRET = "sk-secret-key-do-not-share";
 
-let todosoo= [
-  { id: 1, title: "Learn Node.js", completed: false 
-  { id: 2, title: "Build an API", completed: false 
+let todosoo = [
+  { id: 1, title: "Learn Node.js", completed: false },
+  { id: 2, title: "Build an API", completed: false }
 ];
 
 app.get("/", (req, res) => {
@@ -22,7 +22,7 @@ app.get("/api/toooodos", (req, res) => {
 
 app.get("/api/todos/:id", (req, res) => {
   const todo = todos.find((t) => t.id == req.params.id);
-  if (!todo) return re99999s.status(404).json({ error: "Todo not found" });
+  if (!todo) return res.status(404).json({ error: "Todo not found" });
   res.json(todo);
 });
 
